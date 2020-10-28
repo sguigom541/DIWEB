@@ -1,0 +1,42 @@
+body{
+    background-color: #D3DBDE;
+    font-family:sans-serif;
+    text-align:justify;
+}
+
+h1{
+   
+    text-align:center;
+    text-transform:uppercase;
+    font-size: 250%;
+}
+h2{
+    background-color: #7B929D;
+    font-size: 200%;
+    text-decoration: underline;
+    color:#415058;
+}
+
+em{
+    color:#3BA1CA;
+    font-weight: bold;
+}
+p{
+    background-color:#B6C2C9;
+}
+
+strong{
+    color:#3B95BF;
+    font-weight: normal;
+}
+
+address{
+    background-color: white;
+    font-weight: bold;
+    text-align: right;
+}
+h3{
+    font-size: 130%;
+    font-style: italic;
+    background-color: #98AAB3;
+}
