@@ -1,0 +1,44 @@
+body{
+    background-color: #EEEEEE;
+    color:black;
+    text-align:justify;
+}
+
+h1 {
+    color: #333333;
+    font-size: 200%;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    background-color: #CCCCCC;
+    line-height:150%;
+    
+}
+h2{
+        background-color: #888888;
+        color: red;
+        font-size: 150%;
+        text-transform: capitalize;
+}
+h3{
+    background-color: #aaaaaa;
+    color: DarkMagenta;
+    font-size: 130%;
+}
+em {
+    color: blue;
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+address {
+    background-color: white;
+    font-style: normal;
+    text-align: right;
+}
+strong {
+    color: green;
+    
+}

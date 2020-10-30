@@ -1,0 +1,32 @@
+body{
+    background-color:#2D8652;
+}
+
+h1{
+    font-size:400%;
+}
+p {
+    font-size: 150%;
+}
+.infancia{
+    font-family:serif;
+    color:white;
+    font-style:oblique;
+}
+
+.animales{
+    font-family:sans-serif;
+    color:#FFDF9D;
+}
+
+.literatura{
+    font-family:monospace;
+    font-size: 200%;
+    color:#FF9F20
+}
+
+.numeros{
+    font-family:cursive;
+    font-family: cursive;
+    color:#E0464F;
+}
