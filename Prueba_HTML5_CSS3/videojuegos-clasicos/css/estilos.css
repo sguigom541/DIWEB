@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Monoton";
+    src: url("../fonts/monoton.woff2");
+}
+body{
+    background-color:black;
+}
+.pong{
+    border-style:solid;
+    border-color:white;
+}
+.pacman{
+    border-style:solid;
+    border-color:white;
+}
+h1{
+    color:green;
+    text-align:center;
+}
+.space{
+    border-style:solid;
+    border-color:white;
+}
+p{
+    color:white;
+}
+h2{
+    background-color:green;
+    color:white;
+}
+em{
+    color:red;
+}
+strong{
+    color:yellow;
+}
+address{
+    color:white;
+    text-align:left;
+    border-top: solid;
+    border-color:green;
+}

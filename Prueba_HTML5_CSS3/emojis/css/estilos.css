@@ -1,0 +1,32 @@
+body{
+ text-align:justify;
+ font-family:sans-serif;
+}
+#logo{
+    width:8%;
+    height:8%;
+    position:absolute;
+    margin-left:90%;
+    bottom:80%;
+    
+}
+img.emojione{
+    width:50px;
+}
+span{
+    font-size:4rem;
+}
+em{
+    font-weight:bolder;
+}
+p{
+    
+    
+}
+h1{
+    
+}
+.parrafos{
+    margin-left:50%;
+    margin-right:20%;
+}
