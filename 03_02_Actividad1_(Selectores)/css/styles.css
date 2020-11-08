@@ -23,3 +23,15 @@ a[rel="next"]::before{
     content: url("../img/icons8-plus-24.png");
     
 }
+a[rel="tag"]::before{
+    content: url("../img/icons8-buying-30.png");
+}
+a[rel="bookmark"]::before{
+    content: url("../img/icons8-star-20.png");
+}
+a[rel="help"]::before{
+    content: url("../img/icons8-pdf-20.png");
+}
+a[rel="nofollow"]::before{
+    content: url("../img/icons8-shield-20.png");
+}
