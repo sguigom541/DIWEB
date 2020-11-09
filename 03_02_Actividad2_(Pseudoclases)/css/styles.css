@@ -16,24 +16,14 @@ ul li:nth-child(3){
     color:#81FF81;
 }
 
-ul li:nth-child(even)::after{
-    visibility:hidden;
-    cursor: pointer;
-}
+
 ul li:nth-child(even):hover::after{
-    margin-left:5px;
+    
     content: 'somos pares';
-    visibility: visible;
-    color:black
 }
 
-ul li:nth-child(odd)::before{
-    visibility: hidden;
-    cursor: pointer;
-}
+
 ul li:nth-child(odd):hover::before{
-    visibility: visible;
     content:'somos impares';
-    color:black;
 }
 
