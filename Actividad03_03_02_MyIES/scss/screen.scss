@@ -1,0 +1,36 @@
+
+// se crean las variables
+$text-color:#eee;
+$textColorHover:#fff;
+$fondoColor:#666;
+$fondoColorHover:#888;
+
+
+@mixin colorFondoTexto{
+    background-color: $fondoColor;
+    color:$text-color;
+}
+
+@mixin colorFondoTextoHover{
+   background-color: $fondoColorHover;
+   color:$textColorHover;
+}
+
+@mixin extensionCajaNavegador($cambioBoxSizing){
+    box-sizing: $cambioBoxSizing;
+}
+
+@mixin transicionesNavegador($propiedad,$duracion,$timing){
+    transition-property: $propiedad;
+    transition-duration: $duracion;
+    transition-timing-function: $timing;
+    
+}
+
+@mixin animaciones($name,$duracion,$timing){
+    animation-name: $name;
+    animation-duration: $duracion;
+    animation-timing-function: $timing;
+}
+
+@import "_menu.scss";
