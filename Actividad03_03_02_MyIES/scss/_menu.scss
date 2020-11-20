@@ -1,9 +1,94 @@
 
-nav{
-    position: absolute;
-    width:100;
-    font-family:Arial, Helvetica, sans-serif;
+
+
+//estilos resetados del cuerpo
+body{
+    padding:0;
+    margin:0;
 }
+//estilos de la cabecera
+header{
+    padding: 12px 30px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    @include colorFondoTexto;
+
+}
+//estilos del nav
+nav{
+    ul{
+        //estilos del ul
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        height: 32px;
+        @include colorFondoTexto;
+        ul.submenu {
+            -moz-transition: height 0.5s ease-out;
+            -webkit-transition: height 0.5s ease-out;
+            transition: height 0.5s ease-out;
+            position: absolute;
+            height: 0px;
+            overflow: hidden;
+        }
+    }
+    //flotamos los li a la izquierda
+    li.categoria {
+        a{
+            -moz-transition: padding 0.4s ease-out;
+            -webkit-transition: padding 0.4s ease-out;
+            transition: padding 0.4s ease-out;
+            &:hover{
+                padding: 10px 20px;
+                
+            }
+        }
+        float: left;
+        &:hover{
+            ul.submenu{
+                height:100px;
+            }
+        }
+    }
+
+    //estilos de los enlaces de la barra de navegación
+    a{
+
+        text-decoration: none;
+        width: 160px;
+        padding: 7px 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        @include colorFondoTexto;
+        //lo que ocurre al posicionar el ratón encima del enlace del nav
+        &:hover{
+            @include colorFondoTextoHover;
+            -moz-animation: iluminar 0.4s linear;
+            -webkit-animation: iluminar 0.4s linear;
+            animation: iluminar 0.4s linear;
+        }
+    }
+}
+
+
+
+
+footer{
+     
+        @include colorFondoTexto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        padding: 5px;
+    
+}
+
 
 
 
