@@ -26,8 +26,7 @@ nav{
         height: 32px;
         @include colorFondoTexto;
         ul.submenu {
-            -moz-transition: height 0.5s ease-out;
-            -webkit-transition: height 0.5s ease-out;
+            @include transicionesNavegador(height,0.5s,ease-out);
             transition: height 0.5s ease-out;
             position: absolute;
             height: 0px;
@@ -37,8 +36,7 @@ nav{
     //flotamos los li a la izquierda
     li.categoria {
         a{
-            -moz-transition: padding 0.4s ease-out;
-            -webkit-transition: padding 0.4s ease-out;
+            @include transicionesNavegador(padding,0.4s,ease-out);
             transition: padding 0.4s ease-out;
             &:hover{
                 padding: 10px 20px;
@@ -66,8 +64,7 @@ nav{
         //lo que ocurre al posicionar el ratón encima del enlace del nav
         &:hover{
             @include colorFondoTextoHover;
-            -moz-animation: iluminar 0.4s linear;
-            -webkit-animation: iluminar 0.4s linear;
+            @include animaciones(iluminar,0.4s,linear);
             animation: iluminar 0.4s linear;
         }
     }
@@ -79,9 +76,7 @@ nav{
 footer{
      
         @include colorFondoTexto;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
+        @include extensionCajaNavegador(border-box);
         position: absolute;
         width: 100%;
         bottom: 0px;

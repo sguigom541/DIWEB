@@ -23,6 +23,7 @@ nav ul {
 }
 
 nav ul ul.submenu {
+  -webkit-transition: height, 0.5s, ease-out;
   -webkit-transition: height 0.5s ease-out;
   transition: height 0.5s ease-out;
   position: absolute;
@@ -35,6 +36,7 @@ nav li.categoria {
 }
 
 nav li.categoria a {
+  -webkit-transition: padding, 0.4s, ease-out;
   -webkit-transition: padding 0.4s ease-out;
   transition: padding 0.4s ease-out;
 }
@@ -61,15 +63,16 @@ nav a {
 nav a:hover {
   background-color: #888;
   color: #fff;
-  -webkit-animation: iluminar 0.4s linear;
+  -webkit-animation: iluminar, 0.4s, linear;
   animation: iluminar 0.4s linear;
 }
 
 footer {
   background-color: #666;
   color: #eee;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   position: absolute;
   width: 100%;
   bottom: 0px;

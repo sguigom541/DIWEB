@@ -16,21 +16,23 @@ $fondoColorHover:#888;
    color:$textColorHover;
 }
 
-@mixin extensionCajaNavegador($cambioBoxSizing){
-    box-sizing: $cambioBoxSizing;
+@mixin extensionCajaNavegador{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border;
 }
 
 @mixin transicionesNavegador($propiedad,$duracion,$timing){
-    transition-property: $propiedad;
-    transition-duration: $duracion;
-    transition-timing-function: $timing;
-    
+    -moz-transition: $propiedad $duracion $timing;
+    -webkit-transition: $propiedad $duracion $timing;
+    transition: $propiedad $duracion $timing;
 }
 
 @mixin animaciones($name,$duracion,$timing){
-    animation-name: $name;
-    animation-duration: $duracion;
-    animation-timing-function: $timing;
+    -moz-animation: $name $duracion $timing;
+    -webkit-animation: $name $duracion $timing;
+    animation: $name $duracion $timing;
+    
 }
 
 @import "_menu.scss";
