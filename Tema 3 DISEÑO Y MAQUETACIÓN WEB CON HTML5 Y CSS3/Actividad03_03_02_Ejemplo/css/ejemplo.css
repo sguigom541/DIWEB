@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(c:\wamp64\www\2DAW\DIWEB\Repositorios\DIWEB\Actividad03_03_02_Ejemplo\scss\vendors\normalize.css);
-@import url(c:\wamp64\www\2DAW\DIWEB\Repositorios\DIWEB\Actividad03_03_02_Ejemplo\scss\vendors\font-awesome.min.css);
+@import url(c:\wamp64\www\2DAW\DIWEB\Tema 3 DISEÑO Y MAQUETACIÓN WEB CON HTML5 Y CSS3\Actividad03_03_02_Ejemplo\scss\vendors\normalize.css);
+@import url(c:\wamp64\www\2DAW\DIWEB\Tema 3 DISEÑO Y MAQUETACIÓN WEB CON HTML5 Y CSS3\Actividad03_03_02_Ejemplo\scss\vendors\font-awesome.min.css);
 .text-center {
   text-align: center;
 }
@@ -209,3 +209,4 @@ figure.card figcaption {
   margin: 0.5rem;
   text-align: center;
 }
+/*# sourceMappingURL=ejemplo.css.map */

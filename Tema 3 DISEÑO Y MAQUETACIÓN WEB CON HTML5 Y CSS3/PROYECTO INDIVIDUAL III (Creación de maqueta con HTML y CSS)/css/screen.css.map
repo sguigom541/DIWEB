@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACCA,AAAA,IAAI,CAAA;EACA,OAAO,EAAC,CAAC;EACT,MAAM,EAAC,CAAC;CACX;;AAID,AAAA,MAAM,CAAA;EDHF,gBAAgB,EAJR,OAAiB;EAKzB,KAAK,EAJG,IAAI;ECQZ,OAAO,EAAE,SAAS;EAClB,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,gBAAgB;EAC7B,WAAW,EAAE,wCAAwC;CAExD;;AAUD,AAAA,MAAM,CAAA;EDrBF,gBAAgB,EAJR,OAAiB;EAKzB,KAAK,EAJG,IAAI;EC0BZ,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;CAEf",
+    "sources": [
+        "../scss/screen.scss",
+        "../scss/_menu.scss",
+        "../scss/_slider.scss"
+    ],
+    "names": [],
+    "file": "screen.css"
+}

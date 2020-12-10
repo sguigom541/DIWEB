@@ -1,23 +1,7 @@
 //declaracion de variables
 $colorFondo:rgb(41, 128, 185);
 $text-color:#eee;
-$colorFondoNav:rgb(102, 95, 96);
-$fondoColorHover:#888;
-$textColorHover:#fff;
-$fondoColorSidebar:rgba(170, 70, 12, 0.322);
 
-@mixin colorFondoSidebar{
-    background-color: $fondoColorSidebar;
-    color:$text-color;
-}
-@mixin colorFondoNav{
-    background-color: $colorFondoNav;
-    color:$text-color;
-}
-@mixin colorFondoFooter{
-    background-color: $colorFondoNav;
-    color:$text-color;
-}
 @mixin colorFondoTexto{
     background-color: $colorFondo;
     color:$text-color;
@@ -48,4 +32,6 @@ $fondoColorSidebar:rgba(170, 70, 12, 0.322);
  }
 
 
-@import "_menu.scss"
+
+@import "_menu.scss";
+@import "_slider.scss";

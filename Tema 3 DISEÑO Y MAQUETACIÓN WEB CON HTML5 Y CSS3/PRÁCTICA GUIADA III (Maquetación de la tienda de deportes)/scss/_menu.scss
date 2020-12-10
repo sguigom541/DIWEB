@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #e9ecf4;
+    color:#000;
+    font-family: 'Roboto',san-serif;
+}
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "contenido contenido sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "footer footer footer";
+}
+.container >div,
+.container .header,
+.container .nav,
+.container .contenido,
+.container .sidebar,
+.container .footer{
+    background:#fff;
+    padding:20px;
+    border-radius: 4px;
+}
+
+.container .header{
+    @include colorFondoTexto;
+    grid-area: header;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    .logo{
+        float:left;
+        width:100px;
+        height:100px;
+        img{
+            width:100px;
+            height:100px;
+        }
+    }
+    .socialNetworks{
+        float:right;
+        .socialNet{
+            height:40px;
+            width:40px;
+        }
+    }
+
+    
+}
+
+.container .nav{
+    @include colorFondoNav;
+    grid-area: nav;
+    ul{
+        //estilos del ul
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        height: 32px;
+    }
+    li.categoria {
+        a{
+            @include transicionesNavegador(padding,0.4s,ease-out);
+            transition: padding 0.4s ease-out;
+            &:hover{
+                padding: 10px 20px;
+                
+            }
+        }
+        float: left;
+        &:hover{
+            ul.submenu{
+                height:100px;
+            }
+        }
+    }
+    //estilos de los enlaces de la barra de navegación
+    a{
+
+        text-decoration: none;
+        width: 160px;
+        padding: 7px 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        //@include colorFondoTexto;
+        //lo que ocurre al posicionar el ratón encima del enlace del nav
+        &:hover{
+            @include colorFondoTextoHover;
+            @include animaciones(iluminar,0.4s,linear);
+            animation: iluminar 0.4s linear;
+        }
+    }
+}
+    
+        
+
+    
+    
+    
+
+
+.container .contenido{
+    grid-area: contenido;
+}
+
+.container .sidebar{
+    @include colorFondoSidebar;
+    grid-column: 3/4;
+    text-align:center;
+    min-height:100px;
+    grid-area:sidebar;
+    border:1px solid black;
+}
+.container .widget-1,
+.container .widget-2{
+    @include colorFondoTexto;
+    height:200px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.container .widget-1{
+    grid-area: widget-1;
+    margin-right:15px;
+}
+.widgetImg{
+    height:200px;
+}
+.container .widget-2{
+    grid-area: widget-2;
+}
+.container .footer{
+    
+    @include colorFondoNav;
+    grid-area: footer;
+}
+
+
+
+
+
