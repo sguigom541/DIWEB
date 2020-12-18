@@ -1,0 +1,33 @@
+div{
+    border-style:solid;
+    border-color:#FFFFFF;
+    border-width:3px;
+}
+.header{
+    height:55px;
+}
+.footer{
+    height:40px;
+}
+.headerFooter{
+    background-color:#29FE2F;
+}
+.divNumeros{
+    background-color:#88ABDD;
+    height:120px;
+}
+.divDispositivos{
+    
+        background-color: aqua;
+        height: 70px;
+    
+}
+.divLetras{
+    background-color:#CCCCCD;
+    height:120px;
+}
+.divCaras{
+    
+    background-color: #FE9A5D;
+    height: 100px;
+}
